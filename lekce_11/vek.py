@@ -16,13 +16,17 @@ def vek(datum):
     return vek
 
 
-with open("jmena.csv", encoding="utf-8") as f, open("vek.csv", "w", encoding="utf-8") as vystup:
-    for radek in f:
-        jmeno, datum = radek.strip().split(";")
+with open("jmena.csv", "r", encoding="utf-8") as vstup:
+    radky = vstup.readlines()
 
-        if vek(datum) is None:
-            continue
+nove_radky = []
 
-        vystup.write(f"{jmeno};{vek(datum)}\n")
+for radek in radky:
+    jmeno, datum = radek.strip().split(";")
+    v = vek(datum)
+    nove_radky.append(f"{jmeno};{datum};{v}\n")
+
+with open("jmena.csv", "w", encoding="utf-8") as vystup:
+    vystup.writelines(nove_radky)
 
 print("Soubor vek.csv úspěšně vytvořen nebo aktualizován.")
