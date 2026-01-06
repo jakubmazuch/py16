@@ -1,0 +1,20 @@
+NÁPOVĚDA K ŘEŠENÍ
+ZADÁNÍ: SEŘAĎTE OSOBY V SOUBORU vek.csv PODLE VĚKU OD NEJSTARŠÍHO PO NEJMLADŠÍ
+A ULOŽTE DO NOVÉHO SOUBORU vek1.csv
+
+...
+osoby = []
+
+
+    osoba = {
+        "jmeno": jmeno,
+        "vek": vek
+    }
+    osoby.append(osoba)
+
+for i in range(len(osoby)):
+    index_max = i
+    for j in range(i+1, len(osoby)):
+        if osoby[j]["vek"] > osoba[index_max]["vek"]:
+            index_max = j
+    osoby[i], osoby[index_max] = osoby[index_max], osoby[i]

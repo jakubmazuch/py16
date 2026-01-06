@@ -8,7 +8,7 @@ def nacti_datum():
             d = datetime.strptime(text, "%d.%m.%Y").date()
             return d
         except ValueError:
-            print("Chyba: Neplaný formát data. Zadejte např. 04.08.1999")
+            print("Chyba: Neplatný formát data. Zadejte např. 04.08.1999")
 
 
 def nacti_pohlavi():
