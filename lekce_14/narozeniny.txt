@@ -1,0 +1,14 @@
+ZADÁNÍ:
+Uživatel zapíše kladné číslo 'n' - počtu dnů
+
+Program vypíše seznam uživatelů, kteří v následujích 'n' dnech, vč. dneška 
+budou mít narozeniny (+ věk kterého dosáhnou).
+
+Příklad:
+VSTUP: n = 10
+všichni uživatelé, kteří mají/budou mít narozky v rozsahu 8.1. - 18.1., 
+seřazení podle dne
+
+09.01.2026 bude mít narozeniny Dagmar Bartáková (věk 36)
+12.01.2026 bude mít narozeniny Vojtěch Valenta (věk 32)
+...
