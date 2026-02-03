@@ -1,0 +1,23 @@
+ÚLOHA: Evidence knih: Naprogramujte v Pythonu jednoduchý program pro 
+evidenci knih v knihovně.
+
+Každá kniha má (class Kniha):
+- název
+- autora
+- informaci, zda je půjčená
+
+Program musí umět (objekt třídy Kniha):
+- vytvořit knihu
+- půjčit knihu
+- vrátit knihu
+- vypsat stav knihy (dostupná / půjčená)
+
+Požadavky:
+- vytvoř alespoň 2 knihy
+- u každé knihy ukaž změnu stavu (půjčení, vrácení)
+
+
+Ukázka výstupu (orientační):
+	Kniha: Malý princ
+	Autor: Antoine de Saint-Exupéry
+	Stav: půjčená
