@@ -1,0 +1,33 @@
+ÚLOHA: Evidence studentů
+> Naprogramuj v Pythonu jednoduchý program pro evidenci studentů a jejich známek.
+
+Každý student má:
+- jméno
+- seznam známek (1–5)
+
+Program musí umět:
+- vytvořit studenta
+- přidat studentovi známku
+- spočítat průměr známek
+- rozhodnout, zda student prospěl
+	(neprospěl, pokud má alespoň jednu 5 nebo průměr > 4,5)
+
+Požadavky:
+- vytvoř alespoň 2 studenty
+- každému přidej alespoň 3 známky
+- na konci vypiš: jméno, známky, průměr, prospěl / neprospěl
+
+Omezení:
+- používej slovníky, seznamy a funkce
+
+Ukázka výstupu (orientační):
+
+Student: Jana
+Známky: [1, 2, 3]
+Průměr: 2.00
+Prospěl: ANO
+
+Student: Petr
+Známky: [2, 5, 3]
+Průměr: 3.33
+Prospěl: NE
