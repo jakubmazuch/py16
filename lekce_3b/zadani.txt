@@ -53,7 +53,7 @@ Metody:
   → smaže kontakt podle e-mailu
   → pokud kontakt neexistuje, vyhoďte ValueError
 
-- find(query)
+- find(query) *
   → vrátí seznam kontaktů, kde se query vyskytuje:
     - ve jméně nebo příjmení
     - v e-mailu
@@ -88,7 +88,7 @@ V hlavním souboru:
   → obě situace musí být ošetřeny pomocí try/except
 
 --------------------------------------------------
-VOLITELNÁ ROZŠÍŘENÍ (NEPOVINNÉ)
+VOLITELNÁ ROZŠÍŘENÍ (NEPOVINNÉ) - ** (zkusíme ve čtvrtek)
 --------------------------------------------------
 
 Vyberte si alespoň jedno:
