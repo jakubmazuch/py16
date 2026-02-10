@@ -1,0 +1,110 @@
+EVIDENCE KONTAKTŮ
+
+--------------------------------------------------
+STRUKTURA PROJEKTU
+--------------------------------------------------
+
+Projekt rozdělte do následujících souborů:
+
+1) contact.py
+2) contact_book.py
+3) main.py
+
+--------------------------------------------------
+1) SOUBOR: contact.py
+--------------------------------------------------
+
+Vytvořte třídu Contact, která reprezentuje jeden kontakt.
+
+Atributy:
+- first_name (str)
+- last_name (str)
+- email (str)
+- phone (str)
+- tags (list[str]) – např. ["client", "lead"]
+
+Metody:
+- full_name()
+  → vrátí celé jméno ve tvaru "Jan Novak"
+
+- has_tag(tag)
+  → vrátí True / False podle toho, zda kontakt obsahuje daný tag
+
+- __str__()
+  → vrátí hezký textový popis kontaktu
+    (jméno, e-mail, telefon, tagy)
+
+--------------------------------------------------
+2) SOUBOR: contact_book.py
+--------------------------------------------------
+
+Vytvořte třídu ContactBook, která spravuje více kontaktů.
+
+Atributy:
+- contacts – seznam objektů Contact
+
+Metody:
+- add(contact)
+  → přidá kontakt do seznamu
+  → NESMÍ dovolit duplicitní e-mail
+  → při duplicitě vyhoďte ValueError
+
+- remove_by_email(email)
+  → smaže kontakt podle e-mailu
+  → pokud kontakt neexistuje, vyhoďte ValueError
+
+- find(query)
+  → vrátí seznam kontaktů, kde se query vyskytuje:
+    - ve jméně nebo příjmení
+    - v e-mailu
+    - v telefonu
+  → hledání je case-insensitive
+
+- filter_by_tag(tag)
+  → vrátí seznam kontaktů s daným tagem
+
+- list_all(sort_by="name")
+  → vrátí seznam kontaktů seřazený:
+    - "name"  → podle příjmení a jména
+    - "email" → podle e-mailu
+  → při neplatném parametru vyhoďte ValueError
+
+--------------------------------------------------
+3) SOUBOR: main.py
+--------------------------------------------------
+
+V hlavním souboru:
+
+- vytvořte objekt ContactBook
+- přidejte alespoň 4 různé kontakty
+- vypište:
+  - všechny kontakty
+  - výsledek hledání (např. "nov", "@gmail")
+  - filtr podle tagu (např. "client")
+
+- vyzkoušejte:
+  - přidání kontaktu s duplicitním e-mailem
+  - smazání neexistujícího kontaktu
+  → obě situace musí být ošetřeny pomocí try/except
+
+--------------------------------------------------
+VOLITELNÁ ROZŠÍŘENÍ (NEPOVINNÉ)
+--------------------------------------------------
+
+Vyberte si alespoň jedno:
+
+- validace e-mailu (musí obsahovat znak @)
+- normalizace telefonu (odstranění mezer a pomlček)
+- update e-mailu kontaktu (s kontrolou duplicity)
+- uložení kontaktů do JSON souboru
+- statistika: kolik kontaktů má jednotlivé tagy
+
+--------------------------------------------------
+POZNÁMKA
+--------------------------------------------------
+
+Důraz je kladen na:
+- čistý návrh tříd
+- rozdělení odpovědností
+- čitelnost kódu
+- smysluplné použití výjimek
