@@ -8,6 +8,12 @@ class Clovek:
         self.kamos = druhy
         druhy.kamos = self
 
+    def zrus_kamaradstvi(self):
+        if self.kamos is not None:
+            druhy = self.kamos
+            self.kamos = None
+            druhy.kamos = None
+
     def predstav_se(self):
         if self.kamos is None:
             kamarad = "nemám"

@@ -8,3 +8,8 @@ karel.skamarad_se(michal)
 
 karel.predstav_se()
 michal.predstav_se()
+
+karel.zrus_kamaradstvi()
+
+karel.predstav_se()
+michal.predstav_se()
