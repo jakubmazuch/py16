@@ -17,11 +17,22 @@ class Faktura(Doklad):
         super().__init__(cislo, zakaznik, polozky, datum)
         self.sazba_dph = float(sazba_dph)
 
+    @property
+    def sazba_dph(self):
+        return self._sazba_dph
+
+    @sazba_dph.setter
+    def sazba_dph(self, value):
+        if value < 0:
+            raise ValueError("DPH nesmí být záporné.")
+        self._sazba_dph = float(value)
+
+    @property
     def dph(self) -> float:
         return self.soucet_bez_dph() * self.sazba_dph
 
     def celkova_castka(self) -> float:
-        return self.dph() + self.soucet_bez_dph()
+        return self.dph + self.soucet_bez_dph()
 
     def typ(self) -> str:
         return "Faktura"

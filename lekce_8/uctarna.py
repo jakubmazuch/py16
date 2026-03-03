@@ -28,4 +28,4 @@ class Uctarna:
         return vysledek
 
     def celkove_dph(self) -> float:
-        return sum(w.dph() for w in self.doklady if isinstance(w, Faktura))
+        return sum(w.dph for w in self.doklady if isinstance(w, Faktura))

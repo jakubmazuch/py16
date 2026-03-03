@@ -17,7 +17,7 @@ def main() -> None:
     ]
 
     doklady = [
-        Faktura("2026-01", "Abeceda s.r.o.", polozky1, sazba_dph=0.21),
+        Faktura("2026-01", "Abeceda s.r.o.", polozky1, sazba_dph=-0.2),
         Zaloha("2026-Z01", "OMEGA s.r.o.", polozky2, procento=0.5),
         Dobropis("2026-D01", "Mr. Q", polozky3, procento_vraceni=1.0)
     ]
