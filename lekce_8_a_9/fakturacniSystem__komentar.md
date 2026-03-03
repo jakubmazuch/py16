@@ -1,14 +1,11 @@
 # 🧾 Fakturační systém – Teoretický podklad a komentáře kódu
 
-> Tento dokument slouží jako výukový materiál k projektu fakturačního systému. Vysvětluje klíčové koncepty objektově orientovaného programování (OOP) v Pythonu a komentuje každý soubor projektu.
+## 📚 Teoretický background
 
----
+### Smysl OOP?
 
-## 📚 Teoretický základ
-
-### Co je objektově orientované programování (OOP)?
-
-OOP je programovací paradigma, které organizuje kód do **objektů** – instancí tříd. Objekt kombinuje **data** (atributy) a **chování** (metody) do jednoho celku. Oproti procedurálnímu přístupu je OOP přehlednější, lépe rozšiřitelné a umožňuje znovupoužití kódu.
+OOP je paradigma, které organizuje kód do **objektů** – instancí tříd. Objekt kombinuje **data** (= atributy) a **chování** (= metody) do jednoho celku. 
+Oproti předchozímu přístupu (procedurální programování) je OOP přehlednější, lépe rozšiřitelné a umožňuje znovupoužití kódu.
 
 Čtyři základní principy OOP:
 
@@ -459,7 +456,3 @@ if __name__ == "__main__":
 | **Polymorfismus** | `Uctarna.obrat()` volá `celkova_castka()` bez ohledu na konkrétní typ |
 | **Zapouzdření** | `Polozka` a `Faktura` hlídají správnost svých dat přes validaci a property |
 | **Rozšiřitelnost** | Nový typ dokladu stačí vytvořit jako potomka `Doklad` – `Uctarna` nepotřebuje změnu |
-
----
-
-*Dokument byl vygenerován jako výukový materiál k projektu Fakturační systém.*
