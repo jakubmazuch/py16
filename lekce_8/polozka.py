@@ -2,7 +2,7 @@ class Polozka:
     def __init__(self, nazev: str, mnozstvi: int, cena_za_ks: float):
         if not nazev or not nazev.strip():
             raise ValueError("Název položky nesmí být prázdný.")
-        if mnozstvi <=0 :
+        if mnozstvi <= 0:
             raise ValueError("Množství musí být kladné.")
         if cena_za_ks < 0:
             raise ValueError("Cena za ks nesmí být záporná.")

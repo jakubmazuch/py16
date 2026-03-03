@@ -19,10 +19,10 @@ class Doklad(ABC):
         self.datum = datum if datum is not None else date.today()
 
     def soucet_bez_dph(self) -> float:
-        return sum(p.cena_celkem() for p in self.polozky)
+        return sum(p.cena_clk() for p in self.polozky)
 
     @abstractmethod
-    def celkova_castka(self) ->float:
+    def celkova_castka(self) -> float:
         raise NotImplementedError
 
     def typ(self) -> str:
