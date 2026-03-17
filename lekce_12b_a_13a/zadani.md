@@ -74,12 +74,12 @@ Umí:
 
 # 4️⃣ Ukládání do souboru
 
-Data se ukládají do souboru(např. `parkovani.csv`).
+Data se ukládají do souboru (např. `parkovani.csv`).
 
 Požadavky:
 - při vjezdu se záznam uloží do souboru
 - při načtení programu se data načtou ze souboru
-- při výjezdu(pokud je zaplaceno) se záznam ze souboru odstraní
+- při výjezdu (pokud je zaplaceno) se záznam ze souboru odstraní
 
 ---
 
@@ -87,7 +87,7 @@ Požadavky:
 
 Použij modul `datetime`.
 
-- ukládej čas jako text(string)
+- ukládej čas jako text (string)
 - při výpočtech převáděj na `datetime`
 
 ---
@@ -103,13 +103,11 @@ Navrhni rozhraní metod tak, aby:
 
 # Doporučená struktura souborů
 
-
-parkovaci_zaznam.py
-cenik.py
-parkoviste.py
-main.py
+parkovaci_zaznam.py  
+cenik.py  
+parkoviste.py  
+main.py  
 parkovani.json
-
 
 ---
 
@@ -125,7 +123,7 @@ parkovani.json
 # Rozšíření (volitelné)
 
 - kontrola duplicitní SPZ při vjezdu
-- minimální účtovaná doba(např. 1 hodina)
+- minimální účtovaná doba (např. 1 hodina)
 - zaokrouhlování ceny
 - historie parkování
 
