@@ -1,0 +1,17 @@
+[
+    {
+        "spz": "1AC5547",
+        "cas_vjezdu": "2026-03-19 08:15:25",
+        "zaplaceno": true
+    },
+    {
+        "spz": "3T42055",
+        "cas_vjezdu": "2026-03-19 09:48:42",
+        "zaplaceno": false
+    },
+    {
+        "spz": "7SA0144",
+        "cas_vjezdu": "2026-03-19 10:10:10",
+        "zaplaceno": false
+    }
+]
